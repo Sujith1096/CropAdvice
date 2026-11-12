@@ -13,12 +13,9 @@ python-multipart
 scikit-learn
 pandas
 numpy
-xgboost
-lightgbm
-shap
 # Integrations
 requests
 Pillow
-tensorflow-cpu
-google-generativeai
+ai-edge-litert
+google-genai
 supabase

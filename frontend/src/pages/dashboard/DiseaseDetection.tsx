@@ -1,4 +1,4 @@
-import { apiFetch } from "@/lib/api"
+import { apiFetch, parseApiError } from "@/lib/api"
 import { useState, useRef } from "react"
 import { Loader2, UploadCloud, ShieldAlert, CheckCircle2, Leaf, AlertTriangle } from "lucide-react"
 
@@ -77,11 +77,12 @@ export default function DiseaseDetection() {
       const response = await apiFetch("/api/ml/predict-disease", {
         method: "POST",
         body: formData,
+        timeoutMs: 90000,
       })
 
       if (!response.ok) {
-        const errorData = await response.json()
-        throw new Error(errorData.detail || "Analysis failed")
+        const message = await parseApiError(response, "Analysis failed")
+        throw new Error(message)
       }
 
       const data = await response.json()

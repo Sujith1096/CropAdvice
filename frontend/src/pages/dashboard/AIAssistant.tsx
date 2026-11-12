@@ -1,4 +1,4 @@
-import { apiFetch } from "@/lib/api"
+import { apiFetch, parseApiError } from "@/lib/api"
 import { useState, useRef, useEffect } from "react"
 import { Send, Bot, User, Loader2, Sprout, Trash2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -46,19 +46,20 @@ export default function AIAssistant() {
 
   const handleClearChat = async () => {
     if (!confirm("Are you sure you want to clear your chat history?")) return
-    
+
     try {
       const res = await apiFetch("/api/ml/chat/history", {
-        method: "DELETE"
+        method: "DELETE",
       })
-      if (res.ok) {
-        setMessages([
-          {
-            role: "assistant",
-            content: "Hello! I am your CropAdvice AI Assistant. How can I help you with your crops today?",
-          },
-        ])
+      if (!res.ok) {
+        throw new Error(await parseApiError(res, "Failed to clear chat history"))
       }
+      setMessages([
+        {
+          role: "assistant",
+          content: "Hello! I am your CropAdvice AI Assistant. How can I help you with your crops today?",
+        },
+      ])
     } catch (e) {
       console.error("Failed to clear chat history", e)
     }
@@ -90,7 +91,7 @@ export default function AIAssistant() {
       })
 
       if (!response.ok) {
-        throw new Error("Failed to get response")
+        throw new Error(await parseApiError(response, "Failed to get response"))
       }
 
       const data = await response.json()

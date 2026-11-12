@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mx-auto px-4 mt-8 pt-8 border-t text-center text-sm text-neutral-500">
-        &copy; {new Date().getFullYear()} CropAdvice. Satyendra Nath Bose Summer Internship Project.
+        &copy; {new Date().getFullYear()} CropAdvice.
       </div>
     </footer>
   )

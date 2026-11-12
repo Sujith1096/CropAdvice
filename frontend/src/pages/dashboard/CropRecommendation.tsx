@@ -1,4 +1,4 @@
-import { apiFetch } from "@/lib/api"
+import { apiFetch, parseApiError } from "@/lib/api"
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -55,11 +55,12 @@ export default function CropRecommendation() {
           "Content-Type": "application/json"
         },
         body: JSON.stringify(data),
+        timeoutMs: 60000,
       })
 
       if (!response.ok) {
-        const errorData = await response.json()
-        throw new Error(errorData.detail || "Prediction failed")
+        const message = await parseApiError(response, "Prediction failed")
+        throw new Error(message)
       }
 
       const resData = await response.json()

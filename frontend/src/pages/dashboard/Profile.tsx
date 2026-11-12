@@ -1,4 +1,4 @@
-import { apiFetch } from "@/lib/api"
+import { apiFetch, parseApiError } from "@/lib/api"
 import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -50,33 +50,31 @@ export default function Profile() {
   useEffect(() => {
     async function fetchProfile() {
       try {
-        const token = localStorage.getItem("token")
-        const response = await apiFetch("/api/auth/me", {
-          headers: {
-            "Authorization": `Bearer ${token}`
-          }
-        })
-        
+        const response = await apiFetch("/api/auth/me")
+
         if (response.ok) {
           const data = await response.json()
           setUserData(data)
-          
+
           if (data.profile) {
             reset({
               location: data.profile.location || "",
-              farm_size_acres: data.profile.farm_size_acres || "",
+              farm_size_acres: data.profile.farm_size_acres ?? "",
               primary_soil_type: data.profile.primary_soil_type || "",
               phone_number: data.profile.phone_number || "",
             })
           }
+        } else {
+          setError(await parseApiError(response, "Failed to load profile"))
         }
-      } catch (err) {
+      } catch (err: any) {
         console.error("Failed to load profile", err)
+        setError(err?.message || "Failed to load profile")
       } finally {
         setIsFetching(false)
       }
     }
-    
+
     fetchProfile()
   }, [reset])
 
@@ -94,19 +92,16 @@ export default function Profile() {
     }
 
     try {
-      const token = localStorage.getItem("token")
       const response = await apiFetch("/api/profile/", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${token}`
         },
         body: JSON.stringify(payload),
       })
 
       if (!response.ok) {
-        const errorData = await response.json()
-        throw new Error(errorData.detail || "Failed to update profile")
+        throw new Error(await parseApiError(response, "Failed to update profile"))
       }
 
       setSuccess(true)
@@ -145,10 +140,10 @@ export default function Profile() {
               <div className="h-20 w-20 bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 rounded-full flex items-center justify-center mb-4">
                 <User className="h-10 w-10" />
               </div>
-              <h3 className="font-bold text-lg">{userData?.full_name}</h3>
+              <h3 className="font-bold text-lg">{userData?.full_name || "Farmer"}</h3>
               <p className="text-sm text-muted-foreground">{userData?.email}</p>
               <div className="mt-4 inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-green-50 text-green-700 dark:bg-green-900/20 dark:text-green-400">
-                {userData?.role.charAt(0).toUpperCase() + userData?.role.slice(1)}
+                {(userData?.role || "farmer").charAt(0).toUpperCase() + (userData?.role || "farmer").slice(1)}
               </div>
             </div>
           </CardContent>

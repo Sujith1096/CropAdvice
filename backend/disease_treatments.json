@@ -1,0 +1,508 @@
+{
+  "Apple___Apple_scab": {
+    "organic": [
+      "Prune branches to open the canopy for better airflow and faster leaf drying.",
+      "Rake and destroy fallen leaves in autumn to eliminate overwintering fungal spores.",
+      "Apply neem oil or sulfur-based organic fungicides at bud break and repeat every 7–10 days during wet weather."
+    ],
+    "chemical": [
+      "Apply protective fungicides containing captan or mancozeb early in the season.",
+      "Alternate with systemic fungicides such as myclobutanil or difenoconazole to reduce resistance risk."
+    ],
+    "fertilizer": [
+      "Avoid excessive nitrogen fertilization, which promotes lush, scab-susceptible foliage.",
+      "Apply balanced NPK (e.g., 10-10-10) in early spring and consider a foliar urea spray after leaf drop to speed leaf decomposition."
+    ]
+  },
+  "Apple___Black_rot": {
+    "organic": [
+      "Prune out dead wood, cankers, and mummified fruit from the tree and orchard floor.",
+      "Sanitize pruning tools with 70% isopropyl alcohol or diluted bleach between cuts.",
+      "Spray copper soap or Bacillus subtilis bio-fungicide during early fruit set."
+    ],
+    "chemical": [
+      "Apply captan, thiophanate-methyl, or strobilurin (azoxystrobin) sprays from petal fall through summer.",
+      "Follow label pre-harvest intervals strictly before picking."
+    ],
+    "fertilizer": [
+      "Maintain adequate potassium and calcium nutrition to strengthen fruit skin and bark.",
+      "Use compost or slow-release balanced fertilizer rather than high-nitrogen quick-release feeds."
+    ]
+  },
+  "Apple___Cedar_apple_rust": {
+    "organic": [
+      "Remove nearby eastern red cedar or juniper hosts within 1–2 miles if feasible, or prune orange galls off junipers in late winter.",
+      "Apply wettable sulfur or copper-based organic sprays starting at pink-bud stage through petal fall."
+    ],
+    "chemical": [
+      "Apply myclobutanil, propiconazole, or mancozeb at 7–10 day intervals from tight cluster through second cover spray.",
+      "Rotate active ingredients to prevent fungal resistance."
+    ],
+    "fertilizer": [
+      "Provide balanced spring NPK with micronutrients (zinc and boron) to support healthy leaf expansion.",
+      "Mulch the root zone with organic compost to reduce drought stress."
+    ]
+  },
+  "Apple___healthy": {
+    "organic": [
+      "No disease treatment needed; continue regular orchard sanitation and annual dormant pruning.",
+      "Monitor leaves weekly during damp spring weather for early signs of scab or rust."
+    ],
+    "chemical": [
+      "No chemical fungicide application required."
+    ],
+    "fertilizer": [
+      "Maintain standard seasonal balanced NPK fertilization based on soil test results.",
+      "Top-dress with well-rotted compost in spring to sustain soil organic matter."
+    ]
+  },
+  "Blueberry___healthy": {
+    "organic": [
+      "No treatment needed; maintain acidic pine-bark or sawdust mulch around the root zone.",
+      "Prune out old canes (>6 years) annually in late winter for airflow."
+    ],
+    "chemical": [
+      "No chemical treatment required."
+    ],
+    "fertilizer": [
+      "Use an acid-forming fertilizer (ammonium sulfate or ericaceous blend) to keep soil pH between 4.5 and 5.5.",
+      "Avoid nitrate-based fertilizers, which can damage blueberry roots."
+    ]
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "organic": [
+      "Apply potassium bicarbonate, horticultural oil, or wettable sulfur sprays at the first sign of white powdery patches.",
+      "Prune interior shoots to improve sunlight penetration and air circulation.",
+      "Avoid overhead irrigation late in the day."
+    ],
+    "chemical": [
+      "Apply myclobutanil, triflumizole, or quinoxyfen on a 10–14 day schedule during active shoot growth.",
+      "Rotate FRAC groups to delay fungicide resistance."
+    ],
+    "fertilizer": [
+      "Limit summer nitrogen applications so late-season succulent shoots do not fuel mildew spread.",
+      "Maintain adequate potassium and calcium for stronger leaf cuticles."
+    ]
+  },
+  "Cherry_(including_sour)___healthy": {
+    "organic": [
+      "No treatment required; keep the canopy open and remove any suckers or fallen debris.",
+      "Water at the base rather than wetting foliage."
+    ],
+    "chemical": [
+      "No chemical treatment required."
+    ],
+    "fertilizer": [
+      "Apply a balanced fruit-tree fertilizer in early spring based on shoot growth and soil tests.",
+      "Supplement with compost mulch to conserve moisture."
+    ]
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "organic": [
+      "Rotate corn with non-host crops (such as soybeans or alfalfa) for 1–2 years.",
+      "Incorporate or remove infected corn residue after harvest to reduce inoculum.",
+      "Plant resistant maize hybrids in future seasons."
+    ],
+    "chemical": [
+      "Apply foliar fungicides containing azoxystrobin, pyraclostrobin, or propiconazole at VT–R1 (tasseling/silking) if lesions reach the ear leaf."
+    ],
+    "fertilizer": [
+      "Ensure adequate potassium (K) to improve stalk strength and foliar disease tolerance.",
+      "Side-dress nitrogen at V6 according to soil nitrate levels without over-applying."
+    ]
+  },
+  "Corn_(maize)___Common_rust_": {
+    "organic": [
+      "Select rust-resistant maize hybrids for next planting.",
+      "Monitor cool, humid periods (60–77°F) closely; biological sprays such as Bacillus-based products can help slow mild spread."
+    ],
+    "chemical": [
+      "If infection is severe before silking on susceptible sweet corn or seed corn, apply mancozeb, azoxystrobin, or propiconazole."
+    ],
+    "fertilizer": [
+      "Provide balanced nitrogen, phosphorus, and potassium at planting to support vigorous early growth.",
+      "Avoid phosphorus deficiency, which delays maturity and extends susceptibility."
+    ]
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "organic": [
+      "Rotate away from corn for at least 1 year and till or shred infected crop residue.",
+      "Choose hybrids with Ht resistance genes when replanting."
+    ],
+    "chemical": [
+      "Apply triazole or strobilurin fungicides (e.g., propiconazole + azoxystrobin) at early tasseling if upper leaves develop cigar-shaped lesions."
+    ],
+    "fertilizer": [
+      "Maintain balanced N-P-K nutrition and adequate potassium to limit yield loss from premature leaf death.",
+      "Ensure proper plant spacing to reduce leaf wetness duration."
+    ]
+  },
+  "Corn_(maize)___healthy": {
+    "organic": [
+      "No disease treatment needed; continue crop rotation and regular field scouting.",
+      "Keep weeds controlled to maintain airflow through rows."
+    ],
+    "chemical": [
+      "No chemical fungicide required."
+    ],
+    "fertilizer": [
+      "Follow split nitrogen application (starter at planting plus side-dress at V6) along with soil-tested P and K.",
+      "Include zinc if soil tests indicate micronutrient deficiency."
+    ]
+  },
+  "Grape___Black_rot": {
+    "organic": [
+      "Remove and destroy all mummified berries and infected tendrils during dormant pruning.",
+      "Use shoot thinning and leaf pulling around the fruit zone to speed drying.",
+      "Apply copper hydroxide or sulfur sprays early in the season (note: avoid sulfur on sulfur-sensitive grape varieties)."
+    ],
+    "chemical": [
+      "Apply mancozeb or captan from 6-inch shoot growth through bloom, followed by myclobutanil or azoxystrobin if wet weather persists."
+    ],
+    "fertilizer": [
+      "Apply moderate, balanced vine nutrition (low-to-moderate nitrogen) to prevent overly dense canopies.",
+      "Ensure adequate potassium and magnesium for fruit quality."
+    ]
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "organic": [
+      "Prune out symptomatic canes or perform trunk renewal during dry weather only.",
+      "Protect fresh pruning wounds with Trichoderma-based biological wound sealants.",
+      "Remove and burn severely declining vines to stop trunk-fungus spread."
+    ],
+    "chemical": [
+      "No curative foliar fungicide exists for established Esca; apply protective pruning-wound paste (e.g., thiophanate-methyl or pyraclostrobin wound protectants) immediately after pruning."
+    ],
+    "fertilizer": [
+      "Avoid water and nutrient stress with steady drip irrigation and organic compost.",
+      "Supply balanced potassium and micronutrients rather than heavy nitrogen."
+    ]
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "organic": [
+      "Remove heavily spotted lower leaves and collect fallen leaf litter after harvest.",
+      "Spray fixed copper or Bordeaux mixture when spots first appear."
+    ],
+    "chemical": [
+      "Apply mancozeb, captan, or copper oxychloride at 10–14 day intervals during humid weather."
+    ],
+    "fertilizer": [
+      "Provide balanced NPK and potassium supplements to sustain leaf longevity through berry ripening.",
+      "Avoid excess nitrogen that encourages dense, shaded foliage."
+    ]
+  },
+  "Grape___healthy": {
+    "organic": [
+      "No treatment required; continue canopy management and seasonal pruning for airflow."
+    ],
+    "chemical": [
+      "No chemical treatment required."
+    ],
+    "fertilizer": [
+      "Apply light spring compost or balanced NPK according to petiole/soil analysis.",
+      "Supplement boron and zinc prior to bloom if tests show low levels."
+    ]
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "organic": [
+      "Control the Asian citrus psyllid vector using horticultural oils, insecticidal soap, or neem oil.",
+      "Remove and destroy severely infected trees to protect surrounding healthy citrus."
+    ],
+    "chemical": [
+      "No chemical cure exists for Citrus Greening (HLB) bacteria; manage psyllid vectors with registered systemic or foliar insecticides (e.g., imidacloprid or spinetoram) per local extension rules."
+    ],
+    "fertilizer": [
+      "Apply frequent, small doses of controlled-release NPK plus enhanced foliar micronutrients (zinc, manganese, iron, boron, magnesium) to prolong tree productivity.",
+      "Maintain slightly acidic soil pH (6.0–6.5) for optimal nutrient uptake."
+    ]
+  },
+  "Peach___Bacterial_spot": {
+    "organic": [
+      "Apply fixed copper sprays at leaf drop in autumn and again at delayed dormant bud swell.",
+      "Prune to maintain an open vase canopy and plant windbreaks to reduce wind-driven leaf abrasion."
+    ],
+    "chemical": [
+      "Apply oxytetracycline (antibiotic) or low-rate copper sprays during shuck split through early cover sprays, rotating carefully to minimize phytotoxicity."
+    ],
+    "fertilizer": [
+      "Avoid excessive nitrogen, which causes tender growth vulnerable to bacterial entry.",
+      "Maintain balanced potassium and calcium levels."
+    ]
+  },
+  "Peach___healthy": {
+    "organic": [
+      "No treatment needed; maintain open-center pruning and remove any mummified fruit in winter."
+    ],
+    "chemical": [
+      "No chemical treatment required."
+    ],
+    "fertilizer": [
+      "Apply balanced stone-fruit fertilizer in early spring based on prior year's shoot growth.",
+      "Mulch around the drip line while keeping mulch away from the trunk."
+    ]
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "organic": [
+      "Remove and destroy symptomatic leaves or severely infected plants immediately.",
+      "Avoid working in the field when foliage is wet and switch from overhead sprinklers to drip irrigation.",
+      "Spray fixed copper mixed with a biological (Bacillus amyloliquefaciens) weekly."
+    ],
+    "chemical": [
+      "Apply copper hydroxide or copper octanoate tank-mixed with mancozeb (where registered) on a 7-day preventive schedule."
+    ],
+    "fertilizer": [
+      "Use balanced N-P-K with supplemental calcium (calcium nitrate) to strengthen cell walls.",
+      "Avoid high nitrogen bursts that create soft, infection-prone tissue."
+    ]
+  },
+  "Pepper,_bell___healthy": {
+    "organic": [
+      "No treatment required; rotate peppers away from tomatoes and eggplants every 3 years."
+    ],
+    "chemical": [
+      "No chemical treatment required."
+    ],
+    "fertilizer": [
+      "Provide balanced fertilizer (e.g., 5-10-10 or 10-10-10) plus calcium to prevent blossom-end rot.",
+      "Side-dress lightly once fruits begin setting."
+    ]
+  },
+  "Potato___Early_blight": {
+    "organic": [
+      "Remove lower infected leaves and mulch soil to prevent rain-splash of spores.",
+      "Apply copper-based fungicide or Bacillus subtilis early when target-like concentric rings appear.",
+      "Practice a 3-year crop rotation out of solanaceous crops."
+    ],
+    "chemical": [
+      "Apply chlorothalonil, mancozeb, or azoxystrobin/difenoconazole every 7–10 days during warm, humid weather."
+    ],
+    "fertilizer": [
+      "Maintain steady nitrogen and potassium nutrition—early blight attacks nitrogen-stressed or aging plants fastest.",
+      "Avoid late-season nutrient starvation by side-dressing at hilling."
+    ]
+  },
+  "Potato___Late_blight": {
+    "organic": [
+      "Remove and bag infected plants immediately; do not compost diseased foliage.",
+      "Apply protective copper hydroxide sprays before cool, wet weather arrives.",
+      "Hill soil well over tubers and wait 2 weeks after vine kill before harvesting."
+    ],
+    "chemical": [
+      "Apply systemic + protectant late-blight fungicides immediately (e.g., chlorothalonil, mancozeb, fluopicolide, or cymoxanil-based products) on a strict 5–7 day schedule."
+    ],
+    "fertilizer": [
+      "Provide balanced P and K for tuber development while avoiding excessive late nitrogen that delays vine maturity.",
+      "Ensure well-drained soil to avoid waterlogging."
+    ]
+  },
+  "Potato___healthy": {
+    "organic": [
+      "No disease treatment needed; keep tubers well hilled and inspect lower leaves weekly."
+    ],
+    "chemical": [
+      "No chemical treatment required."
+    ],
+    "fertilizer": [
+      "Apply phosphorus and potassium at planting with moderate split nitrogen at emergence and hilling.",
+      "Maintain slightly acidic soil pH (5.5–6.5) to prevent scab."
+    ]
+  },
+  "Raspberry___healthy": {
+    "organic": [
+      "No treatment needed; thin floricanes after harvest to maintain air circulation and narrow row widths."
+    ],
+    "chemical": [
+      "No chemical treatment required."
+    ],
+    "fertilizer": [
+      "Apply balanced 10-10-10 or composted manure in early spring before new cane growth begins.",
+      "Ensure good drainage to prevent root rot."
+    ]
+  },
+  "Soybean___healthy": {
+    "organic": [
+      "No treatment needed; continue crop rotation and scout periodically for pods and foliage."
+    ],
+    "chemical": [
+      "No chemical treatment required."
+    ],
+    "fertilizer": [
+      "Inoculate seeds with Bradyrhizobium japonicum at planting to support biological nitrogen fixation.",
+      "Supply phosphorus, potassium, and sulfur based on soil test recommendations."
+    ]
+  },
+  "Squash___Powdery_mildew": {
+    "organic": [
+      "Spray potassium bicarbonate, neem oil, or sulfur (avoid sulfur above 85°F/30°C to prevent leaf burn).",
+      "Remove heavily whitened older leaves and space plants well for airflow.",
+      "Water at soil level early in the morning."
+    ],
+    "chemical": [
+      "Apply chlorothalonil, myclobutanil, or triflumizole alternating modes of action every 7–10 days."
+    ],
+    "fertilizer": [
+      "Maintain balanced NPK and adequate potassium during fruiting.",
+      "Avoid excessive nitrogen that produces overly shaded, tender vines."
+    ]
+  },
+  "Strawberry___Leaf_scorch": {
+    "organic": [
+      "Remove and destroy scorched outer leaves and renovate beds after harvest.",
+      "Use drip irrigation instead of overhead watering to keep foliage dry.",
+      "Apply copper soap or organic sulfur preventively in cool, wet spring weather."
+    ],
+    "chemical": [
+      "Apply captan or myclobutanil from early spring growth through fruit set as needed."
+    ],
+    "fertilizer": [
+      "Feed lightly after harvest (renovation) rather than heavy early-spring nitrogen, which increases soft foliage and rot.",
+      "Ensure adequate potassium for runner and crown resilience."
+    ]
+  },
+  "Strawberry___healthy": {
+    "organic": [
+      "No treatment needed; keep straw mulch under berries and renovate beds annually after fruiting."
+    ],
+    "chemical": [
+      "No chemical treatment required."
+    ],
+    "fertilizer": [
+      "Apply balanced fertilizer at renovation in late summer and light spring feeding if vigor is low.",
+      "Maintain soil pH between 5.8 and 6.5."
+    ]
+  },
+  "Tomato___Bacterial_spot": {
+    "organic": [
+      "Prune away lower spotted leaves using sanitized shears and avoid handling plants when wet.",
+      "Mulch soil to prevent splash dispersal and switch to drip irrigation.",
+      "Apply fixed copper plus a Bacillus-based bio-fungicide every 7 days."
+    ],
+    "chemical": [
+      "Apply copper hydroxide combined with mancozeb (where permitted) on a 7-day preventive schedule."
+    ],
+    "fertilizer": [
+      "Provide steady balanced NPK with supplemental calcium nitrate to strengthen plant tissues.",
+      "Avoid over-fertilizing with nitrogen."
+    ]
+  },
+  "Tomato___Early_blight": {
+    "organic": [
+      "Prune off lower leaves up to 12 inches from the soil and stake/cage plants for airflow.",
+      "Apply straw or plastic mulch to block soil-borne spores from splashing onto leaves.",
+      "Spray copper fungicide, neem oil, or Bacillus subtilis weekly."
+    ],
+    "chemical": [
+      "Apply chlorothalonil, mancozeb, or azoxystrobin every 7–10 days starting when lower leaves show concentric rings."
+    ],
+    "fertilizer": [
+      "Ensure adequate nitrogen and potassium—deficient tomato plants succumb much faster to Early Blight.",
+      "Side-dress with compost or balanced tomato feed at first fruit set."
+    ]
+  },
+  "Tomato___Late_blight": {
+    "organic": [
+      "Immediately pull and bag infected plants—do not compost them, as spores spread rapidly by wind.",
+      "Apply preventive copper sprays ahead of cool, rainy weather.",
+      "Provide wide spacing and avoid overhead watering."
+    ],
+    "chemical": [
+      "Apply protective and systemic late-blight fungicides (chlorothalonil, mancozeb, or mandipropamid/fluopicolide) immediately every 5–7 days."
+    ],
+    "fertilizer": [
+      "Maintain balanced nutrition (moderate nitrogen, good potassium and calcium) and well-drained soil.",
+      "Avoid lush, overly dense foliage from excess nitrogen."
+    ]
+  },
+  "Tomato___Leaf_Mold": {
+    "organic": [
+      "Increase greenhouse or tunnel ventilation and reduce relative humidity below 85%.",
+      "Prune lower leaves and suckers to maximize airflow; water only at the soil surface.",
+      "Apply potassium bicarbonate or copper sprays at first yellow upper-leaf spots."
+    ],
+    "chemical": [
+      "Apply chlorothalonil, mancozeb, or difenoconazole thoroughly to leaf undersides where olive-green mold grows."
+    ],
+    "fertilizer": [
+      "Keep calcium and potassium balanced and avoid excess nitrogen that creates dense canopies.",
+      "Space irrigation early in the day so humidity drops before nightfall."
+    ]
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "organic": [
+      "Remove spotted lower leaves immediately and dispose of them away from the garden.",
+      "Mulch heavily around plant bases and clean/sanitize tomato stakes before reuse.",
+      "Apply copper octanoate or potassium bicarbonate weekly during wet weather."
+    ],
+    "chemical": [
+      "Apply chlorothalonil or mancozeb every 7–10 days from first appearance of small circular spots with dark margins."
+    ],
+    "fertilizer": [
+      "Maintain consistent watering and balanced NPK + calcium feeding to sustain healthy upper foliage.",
+      "Avoid splashing soil onto stems when fertilizing."
+    ]
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "organic": [
+      "Spray plants—especially leaf undersides—with a strong jet of water to dislodge mites and webbing.",
+      "Apply insecticidal soap, neem oil, or horticultural oil every 5–7 days to target newly hatched nymphs.",
+      "Introduce predatory mites (Phytoseiulus persimilis) in enclosed/greenhouse setups."
+    ],
+    "chemical": [
+      "Apply targeted miticides/acaricides such as abamectin, bifenazate, or spiromesifen, rotating classes to avoid resistance (avoid broad-spectrum pyrethroids that kill natural predators)."
+    ],
+    "fertilizer": [
+      "Avoid drought stress and excessive quick-release nitrogen, both of which accelerate mite reproduction.",
+      "Keep soil evenly moist and use balanced slow-release nutrients."
+    ]
+  },
+  "Tomato___Target_Spot": {
+    "organic": [
+      "Prune lower leaves and increase spacing/staking to improve airflow through the lower canopy.",
+      "Apply copper-based organic sprays or Bacillus amyloliquefaciens at early symptom onset."
+    ],
+    "chemical": [
+      "Apply chlorothalonil, azoxystrobin, or difenoconazole every 7–10 days during warm, humid conditions."
+    ],
+    "fertilizer": [
+      "Supply balanced NPK with adequate potassium and calcium to strengthen foliage and fruit skin.",
+      "Avoid waterlogging and overhead watering."
+    ]
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "organic": [
+      "Rogue (remove and bag) infected plants early so whiteflies cannot spread the virus further.",
+      "Use yellow sticky traps, fine insect netting, and neem oil or insecticidal soap to suppress silverleaf whiteflies."
+    ],
+    "chemical": [
+      "No chemical cure exists for viral infection; control whitefly vectors with targeted insecticides (e.g., imidacloprid, pyriproxyfen, or acetamiprid) and plant TYLCV-resistant varieties next season."
+    ],
+    "fertilizer": [
+      "Maintain balanced nutrition and steady irrigation for remaining healthy plants; do not over-feed infected plants with nitrogen, which attracts whiteflies."
+    ]
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "organic": [
+      "Remove and destroy infected plants promptly—do not compost them.",
+      "Wash hands with soap and sanitize tools in 10% milk or trisodium phosphate solution before touching healthy tomatoes (tobacco products can also transmit TMV)."
+    ],
+    "chemical": [
+      "No chemical treatment cures Tomato Mosaic Virus; focus strictly on sanitation, weed host removal, and planting TMV-resistant varieties."
+    ],
+    "fertilizer": [
+      "Support healthy surrounding plants with balanced NPK and micronutrients while avoiding mechanical damage during side-dressing."
+    ]
+  },
+  "Tomato___healthy": {
+    "organic": [
+      "No disease treatment needed; maintain staking, lower-leaf pruning, and mulch around the base."
+    ],
+    "chemical": [
+      "No chemical treatment required."
+    ],
+    "fertilizer": [
+      "Apply balanced tomato fertilizer (higher phosphorus and potassium once flowering starts) plus calcium to prevent blossom-end rot.",
+      "Water consistently at the base."
+    ]
+  }
+}
+

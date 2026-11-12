@@ -8,8 +8,13 @@ load_dotenv()
 
 SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./cropadvice.db")
 
+_is_sqlite = "sqlite" in SQLALCHEMY_DATABASE_URL
+_connect_args = {"check_same_thread": False} if _is_sqlite else {"connect_timeout": 10}
+
 engine = create_engine(
-    SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False} if "sqlite" in SQLALCHEMY_DATABASE_URL else {}
+    SQLALCHEMY_DATABASE_URL,
+    connect_args=_connect_args,
+    pool_pre_ping=True,
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 

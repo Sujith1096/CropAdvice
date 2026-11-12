@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 import requests
-import functools
+import time
 import logging
 import auth, models, schemas, database
 
@@ -10,20 +10,31 @@ router = APIRouter(
     tags=["Weather"]
 )
 
-@functools.lru_cache(maxsize=100)
+_WEATHER_CACHE_TTL_SECONDS = 900
+_weather_cache: dict[tuple[float, float], tuple[float, dict]] = {}
+
+
 def fetch_weather(lat: float, lon: float):
-    # Using Open-Meteo for free weather data
+    # Using Open-Meteo for free weather data with a 15-minute TTL cache
+    cache_key = (round(lat, 3), round(lon, 3))
+    now = time.monotonic()
+    cached = _weather_cache.get(cache_key)
+    if cached and (now - cached[0]) < _WEATHER_CACHE_TTL_SECONDS:
+        return cached[1]
+
     url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true&hourly=temperature_2m,relativehumidity_2m,precipitation_probability"
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=10)
         response.raise_for_status()
         data = response.json()
-        return {
+        result = {
             "temp": data["current_weather"]["temperature"],
             "humidity": data["hourly"]["relativehumidity_2m"][0],
             "windSpeed": data["current_weather"]["windspeed"],
             "condition": "Clear" if data["current_weather"]["weathercode"] == 0 else "Cloudy/Rain",
         }
+        _weather_cache[cache_key] = (now, result)
+        return result
     except Exception as e:
         logging.error(f"Failed to fetch weather: {e}")
         return {"temp": 25, "humidity": 60, "windSpeed": 12, "condition": "Unknown"}
